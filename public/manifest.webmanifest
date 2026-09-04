@@ -1,0 +1,12 @@
+{
+  "name": "Zappit — Campus Food Delivery",
+  "short_name": "Zappit",
+  "description": "Order food from your favourite campus outlets with Zappit.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#FF6B00",
+  "icons": [
+    { "src": "/zappit/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

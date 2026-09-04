@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Zappit logo">
+  <defs>
+    <linearGradient id="zg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF7A00"/>
+      <stop offset="1" stop-color="#FF4D00"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#0B0B0D"/>
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="15.25" fill="none" stroke="#FF6B00" stroke-opacity="0.35"/>
+  <path d="M38 12 L21 35h9l-4 17 18-24h-9l3-16z" fill="url(#zg)"/>
+</svg>
