@@ -6,13 +6,13 @@ export const SITE_NAME = "Zappit";
 export const SITE_DESCRIPTION =
   "Order food from your favourite campus outlets with Zappit. Fast, simple and built for students.";
 
-export const SITE_URL = "https://www.zappit.example"; // TODO: replace with production domain
+export const SITE_URL = "https://zappit-web.vercel.app";
 
 // The single source of truth for the APK download link.
 // Every download button/CTA across the site must import this constant.
-export const APP_DOWNLOAD_URL = "YOUR_ZAPPIT_APK_URL"; // TODO: replace with real APK URL
+export const APP_DOWNLOAD_URL = "https://github.com/dhruvgupta-og/zappit-web/releases/download/v1.0.1/ZAPPIT.v1.0.apk";
 
-export const APP_VERSION_LABEL = "v1.0.0"; // TODO: replace with real version, shown on /download
+export const APP_VERSION_LABEL = "v1.0.1";
 
 export const CONTACT_EMAIL = "hello@zappit.example"; // TODO: replace
 
