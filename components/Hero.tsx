@@ -9,9 +9,9 @@ export default function Hero() {
   return (
     <header
       id="home"
-      className="relative min-h-screen flex items-start md:items-center pt-32 md:pt-36 pb-16 md:pb-0 overflow-hidden"
+      className="relative min-h-screen flex items-start md:items-center pt-28 md:pt-36 pb-16 md:pb-0 overflow-hidden"
     >
-      {/* Ambient background glow tailored to Zappit navy & amber palette */}
+      {/* Ambient background glow */}
       <div
         className="absolute inset-0 -z-10 pointer-events-none"
         style={{
@@ -29,13 +29,15 @@ export default function Hero() {
         }}
       />
 
-      <div className="max-w-6xl mx-auto px-8 grid md:grid-cols-2 gap-10 items-center w-full">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8 grid md:grid-cols-2 gap-8 md:gap-10 items-center w-full">
+        {/* Text column */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
+          className="text-center md:text-left"
         >
-          <span className="inline-flex items-center gap-2 text-xs font-bold text-orange border border-orange/30 bg-orange/10 px-3.5 py-1.5 rounded-full mb-6 shadow-sm">
+          <span className="inline-flex items-center gap-2 text-xs font-bold text-orange border border-orange/30 bg-orange/10 px-3.5 py-1.5 rounded-full mb-5 shadow-sm">
             <span className="w-2 h-2 rounded-full bg-success animate-ping" />
             <span className="w-1.5 h-1.5 -ml-3.5 rounded-full bg-success" />
             <span>Built for campus life</span>
@@ -43,7 +45,7 @@ export default function Hero() {
             <span className="text-ink-2 font-normal">10-15 Min Express</span>
           </span>
 
-          <h1 className="text-[40px] sm:text-6xl md:text-[68px] leading-[1.04] font-extrabold tracking-tight">
+          <h1 className="text-[38px] sm:text-5xl md:text-[62px] lg:text-[68px] leading-[1.04] font-extrabold tracking-tight">
             <span className="bg-gradient-to-br from-orange via-[#FFD54F] to-orange-dark bg-clip-text text-transparent">
               Campus
             </span>{" "}
@@ -52,12 +54,14 @@ export default function Hero() {
             At your fingertips.
           </h1>
 
-          <p className="mt-6 text-lg text-ink-2 max-w-md leading-relaxed">
-            From your favourite <strong className="text-ink-1">campus outlets</strong> to your hostel doorstep — Zappit makes
-            ordering food faster, simpler, and better.
+          <p className="mt-5 text-base sm:text-lg text-ink-2 max-w-md leading-relaxed mx-auto md:mx-0">
+            From your favourite{" "}
+            <strong className="text-ink-1">campus outlets</strong> to your
+            hostel doorstep — Zappit makes ordering food faster, simpler, and
+            better.
           </p>
 
-          <div className="mt-9 flex flex-wrap items-center gap-4">
+          <div className="mt-8 flex flex-wrap items-center justify-center md:justify-start gap-4">
             <a
               href={APP_DOWNLOAD_URL}
               onClick={() => trackDownloadClick("hero_primary")}
@@ -72,16 +76,18 @@ export default function Hero() {
               <Sparkles size={16} className="text-orange" /> Explore Features
             </a>
           </div>
-          <p className="mt-4 text-xs text-ink-2 flex items-center gap-2">
+          <p className="mt-4 text-xs text-ink-2 flex items-center justify-center md:justify-start gap-2">
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-orange" />
             Available for Android • Direct APK download
           </p>
         </motion.div>
 
+        {/* Phone mockup column */}
         <motion.div
           initial={{ opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.15 }}
+          className="flex justify-center"
         >
           <PhoneMockup />
         </motion.div>

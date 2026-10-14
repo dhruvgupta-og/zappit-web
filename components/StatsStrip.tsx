@@ -9,23 +9,24 @@ const items = [
 
 export default function StatsStrip() {
   return (
-    <section className="border-y border-line bg-bg2/90 py-7">
-      <div className="max-w-6xl mx-auto px-8 flex flex-wrap justify-between items-center gap-6">
+    <section className="border-y border-line bg-bg2/90 py-6">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8 grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-6 items-center">
         {items.map((it) => (
-          <div
-            key={it.label}
-            className="flex items-center gap-3.5 text-sm"
-          >
-            <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${
-              it.emphasize ? "bg-orange/15 text-orange border border-orange/40 shadow-sm" : "bg-bg3 border border-line text-orange"
-            }`}>
-              <it.icon size={20} />
+          <div key={it.label} className="flex items-center gap-3 text-sm">
+            <div
+              className={`w-9 h-9 md:w-10 md:h-10 rounded-xl flex-shrink-0 flex items-center justify-center ${
+                it.emphasize
+                  ? "bg-orange/15 text-orange border border-orange/40 shadow-sm"
+                  : "bg-bg3 border border-line text-orange"
+              }`}
+            >
+              <it.icon size={18} />
             </div>
             <div>
-              <div className={`font-bold ${it.emphasize ? "text-orange" : "text-ink-1"}`}>
+              <div className={`font-bold text-xs sm:text-sm ${it.emphasize ? "text-orange" : "text-ink-1"}`}>
                 {it.label}
               </div>
-              <div className="text-[11px] text-ink-2">{it.detail}</div>
+              <div className="text-[10px] sm:text-[11px] text-ink-2">{it.detail}</div>
             </div>
           </div>
         ))}
