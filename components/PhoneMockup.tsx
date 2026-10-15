@@ -27,32 +27,32 @@ export default function PhoneMockup() {
       ref={ref}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="relative h-[340px] sm:h-[420px] md:h-[560px] w-full max-w-[320px]"
+      className="relative h-[360px] sm:h-[420px] md:h-[480px] lg:h-[540px] w-full max-w-[320px] flex items-center justify-center"
       style={{ perspective: 1500 }}
     >
       <motion.div
         style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
-        animate={{ y: [0, -14, 0] }}
+        animate={{ y: [0, -10, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[180px] h-[360px] sm:w-[210px] sm:h-[420px] md:w-[260px] md:h-[530px]"
+        className="relative w-[180px] h-[360px] sm:w-[210px] sm:h-[420px] md:w-[240px] md:h-[480px] lg:w-[260px] lg:h-[530px]"
       >
         {/* Floating badges */}
         <div
-          className="absolute top-[8%] -left-[14%] bg-bg3/90 border border-line backdrop-blur-xl rounded-2xl px-3 py-1.5 text-xs flex items-center gap-2 shadow-2xl text-ink-1"
+          className="absolute top-[8%] -left-[14%] bg-bg3/90 border border-line backdrop-blur-xl rounded-2xl px-3 py-1.5 text-xs flex items-center gap-2 shadow-2xl text-ink-1 z-20 pointer-events-none"
           style={{ transform: "translateZ(75px)" }}
         >
           <span className="w-2 h-2 rounded-full bg-success animate-pulse" />
           <span className="font-semibold">Order Confirmed</span>
         </div>
         <div
-          className="absolute top-[44%] -right-[20%] bg-bg3/90 border border-line backdrop-blur-xl rounded-2xl px-3 py-1.5 text-xs shadow-2xl text-ink-1 flex items-center gap-1.5"
+          className="absolute top-[44%] -right-[18%] bg-bg3/90 border border-line backdrop-blur-xl rounded-2xl px-3 py-1.5 text-xs shadow-2xl text-ink-1 flex items-center gap-1.5 z-20 pointer-events-none"
           style={{ transform: "translateZ(75px)" }}
         >
           <span className="text-orange font-bold text-sm">₹149</span>
           <span className="text-ink-2">• Campus Cafe</span>
         </div>
         <div
-          className="absolute bottom-[10%] -left-[8%] bg-bg3/90 border border-line backdrop-blur-xl rounded-2xl px-3 py-1.5 text-xs flex items-center gap-2 shadow-2xl text-ink-1"
+          className="absolute bottom-[10%] -left-[8%] bg-bg3/90 border border-line backdrop-blur-xl rounded-2xl px-3 py-1.5 text-xs flex items-center gap-2 shadow-2xl text-ink-1 z-20 pointer-events-none"
           style={{ transform: "translateZ(75px)" }}
         >
           <span className="w-2 h-2 rounded-full bg-orange" />

@@ -6,7 +6,7 @@ export const SITE_NAME = "Zappit";
 export const SITE_DESCRIPTION =
   "Order food from your favourite campus outlets with Zappit. Fast, simple and built for students.";
 
-export const SITE_URL = "https://zappit-web.vercel.app";
+export const SITE_URL = "https://zappit.shop";
 
 // The single source of truth for the APK download link.
 // Every download button/CTA across the site must import this constant.
@@ -14,7 +14,7 @@ export const APP_DOWNLOAD_URL = "https://github.com/dhruvgupta-og/zappit-web/rel
 
 export const APP_VERSION_LABEL = "v1.0.1";
 
-export const CONTACT_EMAIL = "hello@zappit.example"; // TODO: replace
+export const CONTACT_EMAIL = "zappt.shop@gmail.com"; // TODO: replace
 
 export const INSTAGRAM_URL = "#"; // TODO: replace with real profile
 export const LINKEDIN_URL = "#"; // TODO: replace with real profile

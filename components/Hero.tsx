@@ -9,25 +9,27 @@ export default function Hero() {
   return (
     <header
       id="home"
-      className="relative min-h-screen flex items-start md:items-center pt-28 md:pt-36 pb-16 md:pb-0 overflow-hidden"
+      className="relative min-h-[auto] md:min-h-screen flex items-center pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 md:pb-20"
     >
-      {/* Ambient background glow */}
-      <div
-        className="absolute inset-0 -z-10 pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(750px 520px at 20% 15%, rgba(255,193,7,0.12), transparent 70%), radial-gradient(900px 650px at 85% 35%, rgba(255,145,0,0.08), transparent 65%), radial-gradient(1000px 800px at 50% 90%, rgba(19,30,58,0.7), transparent 70%)",
-        }}
-      />
-      <div
-        className="absolute inset-0 -z-10 opacity-20 pointer-events-none"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)",
-          backgroundSize: "48px 48px",
-          maskImage: "radial-gradient(circle at 50% 35%, black, transparent 80%)",
-        }}
-      />
+      {/* Ambient background glow (contained in dedicated overflow-hidden layer so header does not clip 3D phone) */}
+      <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(750px 520px at 20% 15%, rgba(255,193,7,0.12), transparent 70%), radial-gradient(900px 650px at 85% 35%, rgba(255,145,0,0.08), transparent 65%), radial-gradient(1000px 800px at 50% 90%, rgba(19,30,58,0.7), transparent 70%)",
+          }}
+        />
+        <div
+          className="absolute inset-0 opacity-20"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)",
+            backgroundSize: "48px 48px",
+            maskImage: "radial-gradient(circle at 50% 35%, black, transparent 80%)",
+          }}
+        />
+      </div>
 
       <div className="max-w-6xl mx-auto px-5 sm:px-8 grid md:grid-cols-2 gap-8 md:gap-10 items-center w-full">
         {/* Text column */}
