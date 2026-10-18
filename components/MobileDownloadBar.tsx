@@ -39,6 +39,7 @@ export default function MobileDownloadBar() {
       </div>
       <a
         href={APP_DOWNLOAD_URL}
+        download="ZAPPIT.apk"
         onClick={() => trackDownloadClick("mobile_sticky")}
         className="inline-flex items-center gap-1.5 text-xs font-bold px-4 py-2 rounded-full bg-gradient-to-br from-orange to-orange-dark text-bg shadow-amber"
       >

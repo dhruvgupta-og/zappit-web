@@ -4,9 +4,21 @@ import { Download, Info, ShieldCheck, ArrowLeft, Smartphone } from "lucide-react
 import { APP_DOWNLOAD_URL, APP_VERSION_LABEL, SITE_NAME } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: `Download ${SITE_NAME} — Android APK`,
-  description: `Get the ${SITE_NAME} Android app directly, no Play Store required. Fast campus food ordering at your fingertips.`,
+  title: `Download ${SITE_NAME} — Android APK (Official)`,
+  description: `Get the official ${SITE_NAME} Android app directly without Play Store. Fast campus food ordering, real-time rider tracking, and zero queue.`,
   alternates: { canonical: "/download" },
+  openGraph: {
+    title: `Download ${SITE_NAME} — Android APK`,
+    description: `Get the official ${SITE_NAME} Android app directly without Play Store. Fast campus food ordering and delivery.`,
+    url: "/download",
+    images: ["/zappit/app-icon.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Download ${SITE_NAME} — Android APK`,
+    description: `Get the official ${SITE_NAME} Android app directly without Play Store. Fast campus food ordering and delivery.`,
+    images: ["/zappit/app-icon.png"],
+  },
 };
 
 const steps = [
@@ -69,6 +81,7 @@ export default function DownloadPage() {
           </div>
           <a
             href={APP_DOWNLOAD_URL}
+            download="ZAPPIT.apk"
             className="inline-flex items-center justify-center gap-2 font-bold text-sm px-7 py-4 rounded-full bg-gradient-to-br from-orange to-orange-dark text-bg shadow-amber hover:-translate-y-0.5 hover:shadow-[0_12px_36px_-6px_rgba(255,193,7,0.55)] transition-all"
           >
             <Download size={18} /> Download APK

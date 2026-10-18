@@ -13,9 +13,14 @@ export default function DownloadSection() {
     trackDownloadClick("download_section");
     setLoading(true);
     setTimeout(() => {
-      window.location.href = APP_DOWNLOAD_URL;
+      const a = document.createElement("a");
+      a.href = APP_DOWNLOAD_URL;
+      a.download = "ZAPPIT.apk";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
       setLoading(false);
-    }, 500);
+    }, 300);
   }
 
   return (

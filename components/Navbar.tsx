@@ -48,6 +48,7 @@ export default function Navbar() {
         </div>
         <a
           href={APP_DOWNLOAD_URL}
+          download="ZAPPIT.apk"
           onClick={() => trackDownloadClick("navbar")}
           className="inline-flex items-center gap-2 text-sm font-bold px-5 py-2.5 rounded-full bg-gradient-to-br from-orange to-orange-dark text-bg shadow-amber hover:-translate-y-0.5 hover:shadow-[0_12px_36px_-6px_rgba(255,193,7,0.55)] transition-all"
         >
@@ -72,6 +73,7 @@ export default function Navbar() {
           ))}
           <a
             href={APP_DOWNLOAD_URL}
+            download="ZAPPIT.apk"
             onClick={() => trackDownloadClick("mobile_nav")}
             className="inline-flex items-center justify-center gap-2 text-sm font-bold px-5 py-3 rounded-full bg-gradient-to-br from-orange to-orange-dark text-bg shadow-amber"
           >

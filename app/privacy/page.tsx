@@ -4,7 +4,17 @@ import { CONTACT_EMAIL, SITE_NAME } from "@/config/site";
 
 export const metadata: Metadata = {
   title: `Privacy Policy — ${SITE_NAME}`,
+  description: `Learn how ${SITE_NAME} handles student account data, delivery addresses, and privacy securely.`,
   alternates: { canonical: "/privacy" },
+  openGraph: {
+    title: `Privacy Policy — ${SITE_NAME}`,
+    description: `Learn how ${SITE_NAME} handles student account data, delivery addresses, and privacy securely.`,
+    url: "/privacy",
+  },
+  twitter: {
+    title: `Privacy Policy — ${SITE_NAME}`,
+    description: `Learn how ${SITE_NAME} handles student account data, delivery addresses, and privacy securely.`,
+  },
 };
 
 export default function PrivacyPage() {

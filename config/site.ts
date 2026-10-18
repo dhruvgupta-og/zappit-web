@@ -10,7 +10,7 @@ export const SITE_URL = "https://zappit.shop";
 
 // The single source of truth for the APK download link.
 // Every download button/CTA across the site must import this constant.
-export const APP_DOWNLOAD_URL = "https://github.com/dhruvgupta-og/zappit-web/releases/download/v1.0.1/ZAPPIT.v1.0.1.apk";
+export const APP_DOWNLOAD_URL = "/downloads/ZAPPIT.apk";
 
 export const APP_VERSION_LABEL = "v1.0.1";
 
