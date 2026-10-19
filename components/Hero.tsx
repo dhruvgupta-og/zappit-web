@@ -66,6 +66,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap items-center justify-center md:justify-start gap-4">
             <a
               href={APP_DOWNLOAD_URL}
+              download="ZAPPIT.apk"
               onClick={() => trackDownloadClick("hero_primary")}
               className="inline-flex items-center gap-2.5 font-bold text-[15px] px-7 py-4 rounded-full bg-gradient-to-br from-orange to-orange-dark text-bg shadow-amber hover:-translate-y-0.5 hover:shadow-[0_14px_38px_-6px_rgba(255,193,7,0.55)] transition-all"
             >

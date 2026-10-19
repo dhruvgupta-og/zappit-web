@@ -27,6 +27,7 @@ export default function FinalCTA() {
         </p>
         <a
           href={APP_DOWNLOAD_URL}
+          download="ZAPPIT.apk"
           onClick={() => trackDownloadClick("final_cta")}
           className="mt-8 inline-flex items-center gap-2.5 font-bold text-base px-8 md:px-9 py-4 rounded-full bg-gradient-to-br from-orange to-orange-dark text-bg shadow-amber hover:-translate-y-0.5 hover:shadow-[0_14px_40px_-6px_rgba(255,193,7,0.6)] transition-all"
         >

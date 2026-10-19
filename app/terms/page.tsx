@@ -4,7 +4,17 @@ import { CONTACT_EMAIL, SITE_NAME } from "@/config/site";
 
 export const metadata: Metadata = {
   title: `Terms & Conditions — ${SITE_NAME}`,
+  description: `Terms and conditions for ordering food, campus canteens, and deliveries via the ${SITE_NAME} app.`,
   alternates: { canonical: "/terms" },
+  openGraph: {
+    title: `Terms & Conditions — ${SITE_NAME}`,
+    description: `Terms and conditions for ordering food, campus canteens, and deliveries via the ${SITE_NAME} app.`,
+    url: "/terms",
+  },
+  twitter: {
+    title: `Terms & Conditions — ${SITE_NAME}`,
+    description: `Terms and conditions for ordering food, campus canteens, and deliveries via the ${SITE_NAME} app.`,
+  },
 };
 
 export default function TermsPage() {
